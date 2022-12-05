@@ -1,0 +1,46 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:SuperCoolProject_919vb.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="SuperCoolProject_919vb.Views.MainWindow"
+        Icon="/Assets/App-logo.ico"
+		TransparencyLevelHint="Blur"
+		Background="{x:Null}"
+        Title="KolxoZ">
+
+    <Design.DataContext>
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+	<Border BorderBrush="Red" BorderThickness="1">
+	<Grid>
+		<!---->
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="0.25*"/>
+			<ColumnDefinition Width="*"/>
+		</Grid.ColumnDefinitions>
+		<!---->
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
+		<!---->
+		<Border Grid.RowSpan="2" Grid.Column="0" BorderBrush="Red" BorderThickness="1">
+			<StackPanel Margin="10"	Spacing="10" HorizontalAlignment="Center" VerticalAlignment="Center">
+				<Button Content="Test1" Background="White"/>
+				<Button Content="Test2" Background="Wheat"/>
+				<Button Content="Test3" Background="Red"/>
+				<Button Content="Test4" Background="Aqua"/>
+			</StackPanel>
+		</Border>
+		<Border Grid.Row="0" Grid.Column="1" BorderBrush="Red" BorderThickness="1">
+			<TextBlock Text="TEST PANEL" HorizontalAlignment="Center" Margin="25" Background="Azure" />
+		</Border>
+		<Border Grid.Row="1" Grid.Column="1" BorderBrush="Red" BorderThickness="1" >
+			<Rectangle	Fill="AliceBlue" />
+		</Border>
+		
+	</Grid>
+	</Border>
+</Window>
