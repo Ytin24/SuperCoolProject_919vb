@@ -8,12 +8,12 @@ namespace SuperCoolProject_919vb.Models {
     public class KadArbitrClass {
         public int Page { get; set; } // страница 
         public int Count { get; set; } // количество
-        public List<object> Courts { get; set; } // суды
-        public DateTime DateFrom { get; set; } // дата от
-        public DateTime DateTo { get; set; } // дата до
-        public List<Side> Sides { get; set; } // стороны дела
+        public List<object>? Courts { get; set; } // суды
+        public DateTime? DateFrom { get; set; } // дата от
+        public DateTime? DateTo { get; set; } // дата до
+        public List<Side>? Sides { get; set; } // стороны дела
         public List<object> Judges { get; set; } //судьи
-        public List<object> CaseNumbers { get; set; } //номера дел
+        public List<string> CaseNumbers { get; set; } //номера дел
         public bool WithVKSInstances { get; set; } // служебные поручения
         public String? CaseType { get; set; } // тип дела
     }
