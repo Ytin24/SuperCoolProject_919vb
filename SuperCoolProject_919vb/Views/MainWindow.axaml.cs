@@ -1,4 +1,5 @@
 using Avalonia.Controls;
+using Avalonia.Interactivity;
 using Avalonia.Markup.Xaml;
 using Avalonia.ReactiveUI;
 using ReactiveUI;
@@ -12,6 +13,12 @@ namespace SuperCoolProject_919vb.Views {
             AvaloniaXamlLoader.Load(this);
             this.WhenActivated(disposables => { });
         }
-
+        private void OnButtonClick(object sender, RoutedEventArgs e) {
+            new Parser(new KadArbitrClass() {
+                Sides = new() {
+                new Side(){Name = "ООО Мир Пива", Type = -1, ExactMatch = true},
+            },
+            });
+        }
     }
 }

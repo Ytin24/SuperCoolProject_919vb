@@ -34,11 +34,9 @@
 				<TextBox Text="{Binding SideName }" Watermark="Участник дела"/>
 				<Uc:TxtBoxWithButton TextTb="abvcx"/>
 				<Separator Opacity="0" Height="10"/>
-				<Button Content="kkkk"/>
+				<Button Content="Запросить" Click="OnButtonClick"/>
 			</StackPanel>
 		</ScrollViewer>
-	
-			<TextBlock Text="{Binding TimeNow}" Grid.Row="0" Grid.ColumnSpan="2"  HorizontalAlignment="Center" Margin="25" Foreground="WhiteSmoke" />
-		
+		<TextBlock Text="{Binding TimeNow}" Grid.Row="0" Grid.ColumnSpan="2"  HorizontalAlignment="Center" Margin="25" Foreground="WhiteSmoke" />
 	</Grid>
 </Window>
